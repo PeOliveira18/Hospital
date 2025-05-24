@@ -3,13 +3,13 @@ package model;
 public class Diagnostico {
     private String doenca;
     private String descricao;
-    private String patologista;
-    //private Exame exame
+    private String patologistaResponsavel;
 
-    public Diagnostico(String doenca, String descricao, String patologista){
+
+    public Diagnostico(String doenca, String descricao, String patologistaResponsavel){
         this.doenca = doenca;
         this.descricao = descricao;
-        this.patologista = patologista;
+        this.patologistaResponsavel = patologistaResponsavel;
     }
 
     public String getDoenca() {
@@ -20,8 +20,8 @@ public class Diagnostico {
         return descricao;
     }
 
-    public String getPatologista() {
-        return patologista;
+    public String getPatologistaResponsavel() {
+        return patologistaResponsavel;
     }
 
     public void setTipo(String doenca) {
@@ -32,7 +32,7 @@ public class Diagnostico {
         this.descricao = descricao;
     }
 
-    public void setPatologista(Patologista patologista) {
-        this.patologista = String.valueOf(patologista);
+    public void setPatologista(String patologistaResponsavel) {
+        this.patologistaResponsavel = patologistaResponsavel;
     }
 }

@@ -12,7 +12,7 @@ public class Main {
         PatologistaView viewPatologista = new PatologistaView();
         PatologistaController controllerPatologista = new PatologistaController(viewPatologista);
         DiagnosticoView viewDiagnostico = new DiagnosticoView();
-        DiagnosticoController controllerDiagnostico = new DiagnosticoController(viewDiagnostico, viewPatologista);
+        DiagnosticoController controllerDiagnostico = new DiagnosticoController(viewDiagnostico);
         LaboratorioView viewLaboratorio = new LaboratorioView();
         LaboratorioController controllerLaboratorio = new LaboratorioController(viewLaboratorio);
         PacienteView viewPaciente = new PacienteView();

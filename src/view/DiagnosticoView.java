@@ -21,6 +21,11 @@ public class DiagnosticoView {
         return scanner.nextLine();
     }
 
+    public String solicitarPatologistaResponsavel(){
+        System.out.println("Digite o nome do patologista responsavel: ");
+        return scanner.nextLine();
+    }
+
     public void mostrarMensagem(String mensagem){
         System.out.println(mensagem);
     }

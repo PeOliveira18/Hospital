@@ -12,10 +12,8 @@ public class PatologistaView {
     }
 
     public String solicitarNome(){
-        System.out.println("Digite o nome do Patologista");
-        String nome = scanner.nextLine();
-        scanner.nextLine();
-        return nome;
+        System.out.println("Digite o nome do Patologista: ");
+        return scanner.nextLine();
     }
 
     public int solicitarIdade(){

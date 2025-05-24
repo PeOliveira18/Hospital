@@ -16,12 +16,16 @@ public class PacienteView {
 
     public int solicitarIdade(){
         System.out.println("Qual a idade do paciente?");
-        return scanner.nextInt();
+        int idade =scanner.nextInt();
+        scanner.nextLine();
+        return idade;
     }
 
     public int solicitarNumero(){
         System.out.println("Qual o numero de telefone do paciente?");
-        return scanner.nextInt();
+        int numero = scanner.nextInt();
+        scanner.nextLine();
+        return numero;
     }
 
     public String solicitarEndereco(){
