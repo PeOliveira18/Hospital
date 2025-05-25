@@ -1,11 +1,5 @@
-import controller.DiagnosticoController;
-import controller.LaboratorioController;
-import controller.PacienteController;
-import controller.PatologistaController;
-import view.DiagnosticoView;
-import view.LaboratorioView;
-import view.PacienteView;
-import view.PatologistaView;
+import controller.*;
+import view.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,10 +11,13 @@ public class Main {
         LaboratorioController controllerLaboratorio = new LaboratorioController(viewLaboratorio);
         PacienteView viewPaciente = new PacienteView();
         PacienteController controllerPaciente = new PacienteController(viewPaciente);
+        MedicaoView viewMedicao = new MedicaoView();
+        MedicaoController controllerMedicao = new MedicaoController(viewMedicao);
 
         controllerPatologista.logarPatologista();
         controllerDiagnostico.registrarDiagnostico();
         controllerLaboratorio.consultarDadosLaboratorio();
         controllerPaciente.registrarPaciente();
+        controllerMedicao.registrarMedicao();
     }
 }
